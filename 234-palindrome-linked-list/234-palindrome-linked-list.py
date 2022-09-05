@@ -18,7 +18,6 @@ class Solution:
         
         for i in range(n):
             if a[i] != a[l-i-1]:
-                print(i)
                 ans = False
                 break
             
