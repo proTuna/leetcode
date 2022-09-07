@@ -9,7 +9,6 @@ class Solution:
         left = root.left
         right = root.right
         ans = self.isSameTree(left, right)
-        print(ans)
         return ans
         
         
