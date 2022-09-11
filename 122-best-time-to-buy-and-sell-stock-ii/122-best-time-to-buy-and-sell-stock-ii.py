@@ -7,7 +7,7 @@ class Solution:
                 s.append(i)
                 continue
             if s[-1] > i:
-                ans += max(s)-min(s)
+                ans += s[-1]-s[0]
                 while s:
                     s.pop()
                 s.append(i)
