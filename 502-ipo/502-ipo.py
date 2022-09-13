@@ -7,12 +7,11 @@ class Solution:
         hq.heapify(hq1)
         
         while hq1 and k:
-            if hq1[0][-1] <= w:
-                i,j = hq.heappop(hq1)
-                w+= -i
-                k-=1
+            i,j = hq.heappop(hq1)
+            if j <= w:
+                w += -i
+                k -=1
             else:
-                i,j = hq.heappop(hq1)
                 hq.heappush(hq2,[j,i])
             while hq2 and hq2[0][0] <= w:
                 j,i = hq.heappop(hq2)
