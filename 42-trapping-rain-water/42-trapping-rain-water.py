@@ -9,7 +9,7 @@ class Solution:
         while left<right:
             left_max = max(left_max, height[left])
             right_max = max(right_max, height[right])
-            
+            # 더 높은 쪽을 향해 투 포인터 이동
             if left_max <= right_max:
                 ans += left_max - height[left]
                 left+=1
