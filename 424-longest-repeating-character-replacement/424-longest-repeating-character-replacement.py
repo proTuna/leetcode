@@ -11,5 +11,4 @@ class Solution:
             if right-left-max_char_n > k:
                 counts[s[left]]-=1
                 left+=1
-        print(right,left)
         return right-left
